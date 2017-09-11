@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80007B061F66DB4E008AB30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80007B051F66DB4E008AB30E /* Assets.xcassets */; };
 		80E72F371F667BDB0084CEF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E72F361F667BDB0084CEF0 /* AppDelegate.swift */; };
 		80E72F3C1F667BDB0084CEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E72F3A1F667BDB0084CEF0 /* Main.storyboard */; };
-		80E72F3E1F667BDB0084CEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E72F3D1F667BDB0084CEF0 /* Assets.xcassets */; };
 		80E72F491F667BDB0084CEF0 /* sampleapp_tvos_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E72F481F667BDB0084CEF0 /* sampleapp_tvos_swiftUITests.swift */; };
 		80E72F601F66943D0084CEF0 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E72F5F1F66943D0084CEF0 /* AnalyticsViewController.swift */; };
 		80E72F641F66A8230084CEF0 /* CrashesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E72F631F66A8230084CEF0 /* CrashesViewController.swift */; };
@@ -29,10 +29,10 @@
 /* Begin PBXFileReference section */
 		53A9E8A5F08CCCB2A51E9882 /* Pods-sampleapp-tvos-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleapp-tvos-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sampleapp-tvos-swift/Pods-sampleapp-tvos-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		7ED3CD12042BE1866E2BF924 /* Pods_sampleapp_tvos_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sampleapp_tvos_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80007B051F66DB4E008AB30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80E72F331F667BDB0084CEF0 /* sampleapp-tvos-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sampleapp-tvos-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E72F361F667BDB0084CEF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E72F3B1F667BDB0084CEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		80E72F3D1F667BDB0084CEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80E72F3F1F667BDB0084CEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80E72F441F667BDB0084CEF0 /* sampleapp-tvos-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sampleapp-tvos-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E72F481F667BDB0084CEF0 /* sampleapp_tvos_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleapp_tvos_swiftUITests.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 				80E72F5F1F66943D0084CEF0 /* AnalyticsViewController.swift */,
 				80E72F631F66A8230084CEF0 /* CrashesViewController.swift */,
 				80E72F3A1F667BDB0084CEF0 /* Main.storyboard */,
-				80E72F3D1F667BDB0084CEF0 /* Assets.xcassets */,
+				80007B051F66DB4E008AB30E /* Assets.xcassets */,
 				80E72F3F1F667BDB0084CEF0 /* Info.plist */,
 			);
 			path = "sampleapp-tvos-swift";
@@ -206,7 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80E72F3E1F667BDB0084CEF0 /* Assets.xcassets in Resources */,
+				80007B061F66DB4E008AB30E /* Assets.xcassets in Resources */,
 				80E72F3C1F667BDB0084CEF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
