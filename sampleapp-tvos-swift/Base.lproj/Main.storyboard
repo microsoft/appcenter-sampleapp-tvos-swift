@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12121" systemVersion="17A358a" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JjD-M5-abr">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="ceb-3e-Vka">
+            <objects>
+                <viewController restorationIdentifier="welcomeViewController" storyboardIdentifier="welcomeViewController" title="Welcome" id="JjD-M5-abr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A7k-Su-IAZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="XwQ-iV-knd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zxI-5V-6L3">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0g-ne-eIq">
+                                <rect key="frame" x="0.0" y="209" width="1920" height="871"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL1-Qt-gE4">
+                                        <rect key="frame" x="507" y="55" width="907" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Mobile Center is mission control for apps. It brings together multiple services, commonly used for mobile developers, into a single, integrated product.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORw-lg-HjT">
+                                        <rect key="frame" x="507" y="306" width="692" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Navigate through pages to learn about our services">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="30" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-U3-XXP">
+                                        <rect key="frame" x="1688" y="630" width="160" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="eR8-2T-Xix" kind="show" id="pyk-Ks-Kb3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16282719370000001" green="0.16298320890000001" blue="0.16285133360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MCLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Iej-Vb-KPV">
+                                <rect key="frame" x="773" y="20" width="375" height="138"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79558199644088745" green="0.1794092059135437" blue="0.3829837441444397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Iej-Vb-KPV" firstAttribute="top" secondItem="A7k-Su-IAZ" secondAttribute="bottom" constant="20" id="6cl-D0-jiK"/>
+                            <constraint firstItem="Iej-Vb-KPV" firstAttribute="centerX" secondItem="zxI-5V-6L3" secondAttribute="centerX" id="DCJ-Yr-Y6r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYx-0Q-T2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815" y="31"/>
+        </scene>
+        <!--Analytics-->
+        <scene sceneID="40d-G9-EQU">
+            <objects>
+                <viewController restorationIdentifier="analyticsViewController" storyboardIdentifier="analyticsViewController" title="Analytics" id="eR8-2T-Xix" customClass="AnalyticsViewController" customModule="sampleapp_tvos_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M9Q-H8-xyj"/>
+                        <viewControllerLayoutGuide type="bottom" id="8wa-lj-yd3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6XW-Al-Un2">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Analytics" translatesAutoresizingMaskIntoConstraints="NO" id="6Jz-WL-YXr">
+                                <rect key="frame" x="773" y="20" width="375" height="235"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analytics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfH-lH-0Ws">
+                                <rect key="frame" x="882" y="20" width="157" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZW-mm-cJN">
+                                <rect key="frame" x="0.0" y="288" width="1920" height="792"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LB-Lq-Pge">
+                                        <rect key="frame" x="475" y="64" width="970" height="211"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Get information about the number of daily, weekly and monthly users, session duration, the top devices and more. Use events to collect rich behavioral analytics data.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S55-nm-Vnc">
+                                        <rect key="frame" x="658" y="412" width="607" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Send sample event"/>
+                                        <connections>
+                                            <action selector="sendCustomEvent:" destination="eR8-2T-Xix" eventType="primaryActionTriggered" id="rB4-XY-cXW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbR-wT-qLp">
+                                        <rect key="frame" x="658" y="550" width="607" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Send event with color property"/>
+                                        <connections>
+                                            <action selector="sendEventWithProperty:" destination="eR8-2T-Xix" eventType="primaryActionTriggered" id="u0O-8H-DcW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXp-Td-Eq6">
+                                        <rect key="frame" x="85" y="550" width="157" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Prev"/>
+                                        <connections>
+                                            <segue destination="JjD-M5-abr" kind="show" id="sgD-ZX-XZv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgj-xJ-5VU">
+                                        <rect key="frame" x="1691" y="550" width="160" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="fwu-L2-a5A" kind="show" id="qqm-lB-7g2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99577134850000004" green="0.79369282720000001" blue="0.1703634262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99247580766677856" green="0.67837715148925781" blue="0.00029160766280256212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Jz-WL-YXr" firstAttribute="top" secondItem="M9Q-H8-xyj" secondAttribute="bottom" constant="20" id="efB-Hq-cvM"/>
+                            <constraint firstItem="6Jz-WL-YXr" firstAttribute="centerX" secondItem="6XW-Al-Un2" secondAttribute="centerX" id="qgL-hz-6UC"/>
+                            <constraint firstItem="VfH-lH-0Ws" firstAttribute="centerX" secondItem="6XW-Al-Un2" secondAttribute="centerX" id="r3o-VO-obT"/>
+                            <constraint firstItem="VfH-lH-0Ws" firstAttribute="top" secondItem="M9Q-H8-xyj" secondAttribute="bottom" constant="20" id="yFq-Mq-huD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bn0-zH-S6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4144" y="31"/>
+        </scene>
+        <!--Crashes-->
+        <scene sceneID="Jd7-N1-oNT">
+            <objects>
+                <viewController storyboardIdentifier="crashesViewController" title="Crashes" id="fwu-L2-a5A" customClass="CrashesViewController" customModule="sampleapp_tvos_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="asL-t3-mK1"/>
+                        <viewControllerLayoutGuide type="bottom" id="2t4-mm-6Wi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ax5-pV-TNO">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Crashes" translatesAutoresizingMaskIntoConstraints="NO" id="Bt6-mc-Hug">
+                                <rect key="frame" x="773" y="20" width="375" height="235"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crashes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnK-v0-dkJ">
+                                <rect key="frame" x="889" y="20" width="142" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FoU-5I-wOO">
+                                <rect key="frame" x="0.0" y="281" width="1920" height="799"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bI-pR-XVT">
+                                        <rect key="frame" x="509" y="53" width="902" height="190"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Collect crashes from all devices, prioritize them based on the number of users seeing the crash, and get the full stack traces to help you fix them.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Backed by HockeyApp." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz3-co-E5X">
+                                        <rect key="frame" x="509" y="285" width="394" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVC-x0-FJ5">
+                                        <rect key="frame" x="736" y="566" width="435" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Send a sample crash"/>
+                                        <connections>
+                                            <action selector="sendEventWithProperty:" destination="eR8-2T-Xix" eventType="primaryActionTriggered" id="Syu-K2-9c5"/>
+                                            <action selector="sendSampleCrash:" destination="fwu-L2-a5A" eventType="primaryActionTriggered" id="QrU-EO-W8s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRI-l0-0oU">
+                                        <rect key="frame" x="1683" y="566" width="160" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="V28-Tv-T8y" kind="show" id="dHf-l0-FqM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-wO-MGq">
+                                        <rect key="frame" x="77" y="566" width="157" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Prev"/>
+                                        <connections>
+                                            <segue destination="eR8-2T-Xix" kind="show" id="UO1-CI-G6M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.60921669010000001" green="0.82139712570000001" blue="0.315368861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43517515063285828" green="0.63688355684280396" blue="0.18115299940109253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bt6-mc-Hug" firstAttribute="centerX" secondItem="Ax5-pV-TNO" secondAttribute="centerX" id="0d9-kB-ETm"/>
+                            <constraint firstItem="wnK-v0-dkJ" firstAttribute="centerX" secondItem="Ax5-pV-TNO" secondAttribute="centerX" id="eA4-9T-m5M"/>
+                            <constraint firstItem="Bt6-mc-Hug" firstAttribute="top" secondItem="asL-t3-mK1" secondAttribute="bottom" constant="20" id="m31-1u-BIE"/>
+                            <constraint firstItem="wnK-v0-dkJ" firstAttribute="top" secondItem="asL-t3-mK1" secondAttribute="bottom" constant="20" id="zLr-Cc-wab"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydp-uc-pbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6378" y="31"/>
+        </scene>
+        <!--Build-->
+        <scene sceneID="J00-Lt-cwr">
+            <objects>
+                <viewController restorationIdentifier="buildViewController" storyboardIdentifier="buildViewController" title="Build" id="V28-Tv-T8y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="376-zK-8ZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="CXh-Y8-mz7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t4l-Ks-lxm">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOf-jI-6bC">
+                                <rect key="frame" x="0.0" y="263" width="1920" height="817"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfF-FJ-jaP">
+                                        <rect key="frame" x="496" y="70" width="928" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Create an installable app package automatically with every push to your repository. Supports GitHub, or Git repos on Bitbucket and Visual Studio Team Services (VSTS).</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oq-9I-BEY">
+                                        <rect key="frame" x="496" y="306" width="692" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="No additional build hardware required.">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="30" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdR-Yp-MWw">
+                                        <rect key="frame" x="1688" y="590" width="160" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="sTx-pF-F6F" kind="show" id="jPK-Et-Rqf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZZ-OK-gSD">
+                                        <rect key="frame" x="72" y="590" width="157" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Prev"/>
+                                        <connections>
+                                            <segue destination="fwu-L2-a5A" kind="show" id="xNe-Jl-nPy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0117729241" green="0.51368689540000001" blue="0.86273235079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Build" translatesAutoresizingMaskIntoConstraints="NO" id="fRL-dg-MME">
+                                <rect key="frame" x="773" y="20" width="375" height="235"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Build" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q58-oK-kBR">
+                                <rect key="frame" x="917" y="20" width="86" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0098618874330000002" green="0.39412325619999999" blue="0.76743966340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fRL-dg-MME" firstAttribute="top" secondItem="376-zK-8ZW" secondAttribute="bottom" constant="20" id="7EV-ar-DV7"/>
+                            <constraint firstItem="fRL-dg-MME" firstAttribute="centerX" secondItem="t4l-Ks-lxm" secondAttribute="centerX" id="Sq8-Hh-CGo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7UE-pm-H9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8599" y="31"/>
+        </scene>
+        <!--Test-->
+        <scene sceneID="gFb-mS-5vM">
+            <objects>
+                <viewController restorationIdentifier="testViewController" storyboardIdentifier="testViewController" title="Test" id="sTx-pF-F6F" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MtB-ha-TsU"/>
+                        <viewControllerLayoutGuide type="bottom" id="pDP-lk-Nvw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jR2-3h-Kfg">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ud3-Wy-ufb">
+                                <rect key="frame" x="0.0" y="263" width="1920" height="817"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkm-lY-3Or">
+                                        <rect key="frame" x="482" y="70" width="957" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Run your tests on more than 400 unique device configurations. Tests can be written for iOS and Android apps with Xamarin, UITest, Appium, Espresso (Android), and XCUITest (iOS).</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrT-PN-YSf">
+                                        <rect key="frame" x="1688" y="590" width="160" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="5ru-Yb-wXX" kind="show" id="Sgg-nc-sdI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kp0-UN-96s">
+                                        <rect key="frame" x="72" y="590" width="157" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Prev"/>
+                                        <connections>
+                                            <segue destination="V28-Tv-T8y" kind="show" id="7tE-Cg-gNz"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UC-Nm-XVM">
+                                        <rect key="frame" x="482" y="306" width="692" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Backed by Xamarin Test Cloud.">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="30" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1406259239" green="0.72024589780000003" blue="0.83113712070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Test" translatesAutoresizingMaskIntoConstraints="NO" id="t07-SA-ZFD">
+                                <rect key="frame" x="773" y="20" width="375" height="235"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwN-hO-vjK">
+                                <rect key="frame" x="923" y="20" width="74" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19249841570000001" green="0.57584249970000001" blue="0.70243835450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t07-SA-ZFD" firstAttribute="top" secondItem="MtB-ha-TsU" secondAttribute="bottom" constant="20" id="Ics-6I-CZR"/>
+                            <constraint firstItem="t07-SA-ZFD" firstAttribute="centerX" secondItem="jR2-3h-Kfg" secondAttribute="centerX" id="ibu-A6-jQY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRm-Fp-YA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10818" y="31"/>
+        </scene>
+        <!--Distribute-->
+        <scene sceneID="1Cr-aX-GtB">
+            <objects>
+                <viewController restorationIdentifier="buildViewController" storyboardIdentifier="distributeViewController" title="Distribute" id="5ru-Yb-wXX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dLQ-eJ-m83"/>
+                        <viewControllerLayoutGuide type="bottom" id="t5J-94-fRx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EX2-7z-OOy">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vwq-tN-0ky">
+                                <rect key="frame" x="0.0" y="263" width="1920" height="817"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Users can install the app via email distribution lists for testing, much as they'd download an app from the app store." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqT-Fu-Osh">
+                                        <rect key="frame" x="519" y="30" width="882" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV0-cB-WuZ">
+                                        <rect key="frame" x="1688" y="590" width="160" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="ALe-ce-UHi" kind="show" id="9Bt-Od-KoB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpM-Na-diG">
+                                        <rect key="frame" x="72" y="590" width="157" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Prev"/>
+                                        <connections>
+                                            <segue destination="sTx-pF-F6F" kind="show" id="vPQ-Sw-sk0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Kj-PT-rT9">
+                                        <rect key="frame" x="519" y="266" width="692" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Backed by HockeyApp.">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="30" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.30745831130000001" green="0.75310617690000003" blue="0.69504851099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Distribute" translatesAutoresizingMaskIntoConstraints="NO" id="VVO-zN-SDe">
+                                <rect key="frame" x="773" y="20" width="375" height="235"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distribute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy2-lG-8Y8">
+                                <rect key="frame" x="876" y="20" width="168" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2144112587" green="0.64373242860000002" blue="0.58368057009999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VVO-zN-SDe" firstAttribute="centerX" secondItem="EX2-7z-OOy" secondAttribute="centerX" id="sL1-EA-vdS"/>
+                            <constraint firstItem="VVO-zN-SDe" firstAttribute="top" secondItem="dLQ-eJ-m83" secondAttribute="bottom" constant="20" id="tyM-bd-Kqh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LC-5h-Ydd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13060" y="31"/>
+        </scene>
+        <!--Push-->
+        <scene sceneID="AcO-1Z-0Dt">
+            <objects>
+                <viewController restorationIdentifier="pushViewController" storyboardIdentifier="pushViewController" title="Push" id="ALe-ce-UHi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ejd-xy-CfG"/>
+                        <viewControllerLayoutGuide type="bottom" id="igJ-YX-WiR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Boq-yx-qHb">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nl-NX-2Dy">
+                                <rect key="frame" x="0.0" y="263" width="1920" height="817"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1P-Gd-HJn">
+                                        <rect key="frame" x="72" y="590" width="157" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Prev"/>
+                                        <connections>
+                                            <segue destination="5ru-Yb-wXX" kind="show" id="gOy-47-eFj"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcq-Tp-ndU">
+                                        <rect key="frame" x="477" y="44" width="967" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Engage your users by sending them targeted messages to specific sets of users at exactly the right time. Create segments of users based on device and custom properties. </string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96553856130000004" green="0.47338962550000002" blue="0.34525638819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Push" translatesAutoresizingMaskIntoConstraints="NO" id="Dom-4K-rjn">
+                                <rect key="frame" x="773" y="20" width="375" height="235"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzz-c5-DAN">
+                                <rect key="frame" x="917" y="20" width="86" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88657617570000002" green="0.3308620155" blue="0.2366720736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dom-4K-rjn" firstAttribute="centerX" secondItem="Boq-yx-qHb" secondAttribute="centerX" id="IhW-FO-I6w"/>
+                            <constraint firstItem="Dom-4K-rjn" firstAttribute="top" secondItem="Ejd-xy-CfG" secondAttribute="bottom" constant="20" id="cSB-AL-Yo2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veo-m1-Zgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15344" y="31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Analytics" width="375" height="235"/>
+        <image name="Build" width="375" height="235"/>
+        <image name="Crashes" width="375" height="235"/>
+        <image name="Distribute" width="375" height="235"/>
+        <image name="MCLogo" width="375" height="138"/>
+        <image name="Push" width="375" height="235"/>
+        <image name="Test" width="375" height="235"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="7tE-Cg-gNz"/>
+        <segue reference="vPQ-Sw-sk0"/>
+        <segue reference="gOy-47-eFj"/>
+        <segue reference="xNe-Jl-nPy"/>
+        <segue reference="UO1-CI-G6M"/>
+    </inferredMetricsTieBreakers>
+</document>
