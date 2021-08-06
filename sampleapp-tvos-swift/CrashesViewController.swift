@@ -1,6 +1,6 @@
 
 import UIKit
-import MobileCenterCrashes
+import AppCenterCrashes
 
 class CrashesViewController: UIViewController {
 
@@ -24,19 +24,19 @@ class CrashesViewController: UIViewController {
     func presentCrashAlert() {
         let alert = UIAlertController(title: "The app will close",
                                       message: "A crash report will be sent when you reopen the app.",
-                                      preferredStyle: UIAlertControllerStyle.alert)
+                                      preferredStyle: UIAlertController.Style.alert)
 
         // Cancel Button
         alert.addAction(UIAlertAction(title: "Cancel",
-                                      style: UIAlertActionStyle.default,
+                                      style: UIAlertAction.Style.default,
                                       handler: { _ in alert.dismiss(animated: true, completion: nil)
         }))
         // Crash App button
         alert.addAction(UIAlertAction(title: "Crash app",
-                                      style: UIAlertActionStyle.destructive,
+                                      style: UIAlertAction.Style.destructive,
                                       handler: { _ in alert.dismiss(animated: true, completion: nil)
                                         // generate test crash
-                                        MSCrashes.generateTestCrash()
+                                        Crashes.generateTestCrash()
                                         fatalError()
         }))
 
