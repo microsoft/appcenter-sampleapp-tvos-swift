@@ -1,7 +1,8 @@
-platform :tvos, '10.0'
+platform :tvos, '11.0'
 
 target 'sampleapp-tvos-swift' do
-  use_frameworks!
+use_frameworks!
 
-  pod 'MobileCenter'
+  pod 'AppCenter'
+
 end

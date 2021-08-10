@@ -1,6 +1,6 @@
 
 import UIKit
-import MobileCenterAnalytics
+import AppCenterAnalytics
 
 class AnalyticsViewController: UIViewController {
 
@@ -13,7 +13,7 @@ class AnalyticsViewController: UIViewController {
     }
 
     @IBAction func sendCustomEvent(_ sender: Any) {
-        MSAnalytics.trackEvent("Sample event")
+        Analytics.trackEvent("Sample event")
         print("send a custom alert via Cocoapods")
         presentCustomEventAlert()
     }
@@ -49,21 +49,21 @@ class AnalyticsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "💛 Yellow",
                                       style: .default,
                                       handler: { _ in alert.dismiss(animated: true, completion: nil)
-                                        MSAnalytics.trackEvent("Color event", withProperties: ["Color": "Yellow"])
+                                        Analytics.trackEvent("Color event", withProperties: ["Color": "Yellow"])
         }))
 
         // Blue button
         alert.addAction(UIAlertAction(title: "💙 Blue",
                                       style: .default,
                                       handler: { _ in alert.dismiss(animated: true, completion: nil)
-                                        MSAnalytics.trackEvent("Color event", withProperties: ["Color": "Blue"])
+                                        Analytics.trackEvent("Color event", withProperties: ["Color": "Blue"])
         }))
 
         // Red button
         alert.addAction(UIAlertAction(title: "❤️ Red",
                                       style: .default,
                                       handler: { _ in alert.dismiss(animated: true, completion: nil)
-                                        MSAnalytics.trackEvent("Color event", withProperties: ["Color": "Red"])
+                                        Analytics.trackEvent("Color event", withProperties: ["Color": "Red"])
         }))
 
         present(alert, animated: true, completion: nil)
